@@ -6,10 +6,10 @@ module.exports = {
   entry: ['./src/js/index.js', './src/css/style.css'],
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname)
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
+    contentBase: path.resolve(__dirname),
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
