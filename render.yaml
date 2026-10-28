@@ -1,0 +1,16 @@
+# Render static site config for Tatoo Slot
+# https://render.com/docs/reference/blueprint-spec
+#
+# The built artifacts live in `dist/` (committed to the repo).
+# Render serves them as a static site.
+
+services:
+  - type: web
+    name: tatoo-slot
+    env: static
+    branch: main
+    buildCommand: echo "Using pre-built dist/ folder"
+    publicPath: dist
+    plan: free
+    region: oregon
+    autoPublish: true
