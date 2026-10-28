@@ -9,7 +9,6 @@ services:
     name: tatoo-slot
     env: static
     branch: main
-    buildCommand: echo "Using pre-built dist/ folder"
     publicPath: dist
     plan: free
     region: oregon
